@@ -5,6 +5,7 @@ async function sendEmail() {
     const senderName = document.getElementById('senderName').value;
 
     const data = { subject, text, senderEmail, senderName };
+    console.log(data)
 
     try {
       const response = await fetch('https://express-mail-api.vercel.app/send-email', {
